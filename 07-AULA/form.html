@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- Fieldset: Segmenta visualmente o formulário -->
+      <fieldset>
+        <!-- legend: titulo do segmento -->
+        <legend>Dados pessoais</legend>
+
+        <!-- Caixina de nome -->
+        <label for=""> Nome: </label>
+        <input type="text" name="nome" id="nome">
+        <!-- Fim caixinha de nome -->
+
+        <!-- Caixinha data de nascimento -->
+         <label for="">  Data de nascimento: </label>
+         <!-- date: Apenas data -->
+         <input type="date" name="" id="">
+         <!-- datetime-local: Data e hora juntos-->
+         <input type="datetime-local">
+         <!-- time: Apenas hora -->
+        <input type="time">
+         <!-- Fim caixinha data de nascimento-->
+
+         <br><br>
+
+         <!-- Caixinha de números -->
+          <label for="filhos"> Quantidade de filhos </label>
+          <input type="number" name="filhos" id="filhos" min="-3" max="301" step="0.7" value="5">
+          <!-- Fim caixinha de números -->
+
+      </fieldset>
+    </form>
+  </body>
+</html>
