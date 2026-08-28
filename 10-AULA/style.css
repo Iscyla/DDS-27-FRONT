@@ -50,7 +50,7 @@ body{
     color: red;  
 }
 
-.caixa-unica{
+#caixa-unica{
     padding: 10px;
     background-color: #ede9fe;
 }
