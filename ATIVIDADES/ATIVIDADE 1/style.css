@@ -1,0 +1,32 @@
+* {
+  text-align: center;
+}
+#topo {
+  background-color: rgb(224, 223, 223);
+  padding: 70px 30px;
+}
+#caixa1{
+  color: white;
+  font-size: 40px;
+}
+
+#caixa2 {
+  color: white;
+}
+
+#final {
+  background-color: rgb(156, 155, 155);
+  padding: 40px 30px;
+}
+
+#corpo {
+  background-color: red;
+  padding: 50px 40px;
+  font-size: 20px;
+}
+
+.unico {
+  background-color: green;
+  padding: 15px 10px;
+  margin: 30px 0px;
+}
