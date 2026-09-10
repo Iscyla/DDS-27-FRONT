@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*IMPORTALÇAO DE FONTES */
+/*VIA URL*/
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+    background-color: whitesmoke;
+    margin: 20px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*USANDO FONTE VIA URL*/
+h1{
+    font-family: "Baskervville", sans-serif;
+    font-weight: 200;
+}
+
+h2{
+    font-family: "Baskervville", sans-serif;
+    font-weight: 600;
+}
+
+h1, h2{
+    font-family: "Baskervville", sans-serif;
+    color: blueviolet;
+}
+
+/*ESTILIZAÇÃO VIA CLASS*/
+.bloco{
+    background-color: azure;
+    border: 2px solid grey;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/*IMPORTAR FONTES DO PROJETO*/
+@font-face {
+    font-family: "noto";
+    src: url(./fonts/noto.ttf);
+}
+
+/*USANDO A FONTE DO PROJETO*/
+p{
+    font-family: "noto";
+    font-size: 15px;
+    color:cornflowerblue;
+}
+
+/*PSEUDOS CLASSES*/
+a{
+    color: darkmagenta;
+}
+
+a:link{
+    color: deeppink;   
+}
+
+a:visited{
+    color: green;
+}
+
+/*LINK QUE ESTA ATIVO, QUE ESTA CLICADO*/
+a:active{
+    color: orange;
+}
+
+/*QUANDO PASSA O MOUSE EM CIMA*/
+a:hover{
+    color: black;
+    font-size: 20x;
+    text-decoration: none;
+}
+
+/*QUANDO PASSA O MOUSE EM CIMA*/
+button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    transform: scale(0.3,5);
+}
+/*BOTÃO QUE ESTA ATIVO, QUE ESTA CLICADO*/
+button:active{
+    transform: rotate(45deg);
+    transition: 3s;
+}
+/*INPUT QUANDO ESTA SELECIONADO*/
+input:focus{
+    outline: none;
+    border: 2px solid yellow;
+    background-color: azure;
+}
+/*INPUT QUANDO É OBRIGATÓRIO*/
+input:required{
+    border: 2px solid red;
+}
+
+/*QUANDO O PREENCHIMENTO É VÁLIDO*/
+input:valid{
+    background-color:greenyellow;
+}
+
+/*QUANDO O PREENCHIMENTO NÃO É VÁLIDO*/
+input:invalid{
+    background-color: red;
+}
+
+/*QUANDO O CHECKBOX ESTA MARCADO*/
+input:checked{
+    accent-color: green;
+}
+/*ESTILIZA OS INPUTS DESABILITADOS*/
+input:disabled{
+    background-color: grey;
+}
+
+/*SELECIONA O PRIMEIRO FILHO, VULGO PRIMOGÊNITO*/
+.lista-exemplo li:first-child{
+    font-weight: bold;
+    color: green;
+}
+
+/*SELECIONA O ÚLTIMO FILHO, VULGO O PREFERIDO*/
+.lista-exemplo li:last-child{
+    font-weight: bold;
+    background-image: linear-gradient(deeppink, green);
+}
+
+/*SELECIONA O ULTIMO FILHO, VULGO O PREFERIDO*/
+.lista-exemplo li:nth-child(3){
+    background-color: gold ;
+}
+
+/*SELECIONA ESPAÇOS SEM CONTEÚDO*/
+.caixa-vazia:empty{
+    width: 200px;
+    height: 150px;
+    background-color: pink;
+}
+
+/*SELECIONA A PRIMEIRA LINHA DE UM TEXTO*/
+.texto-especial::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+/*SELECIONA A PRIMERA LINHA DE UM TEXTO*/
+.texto-especial::first-line{
+    color: gold;
+    font-size: 20px;
+}
+
