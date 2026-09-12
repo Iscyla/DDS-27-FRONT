@@ -8,7 +8,7 @@
     --color-primary: red;
     --color-text: black;
     --color-bg-page: white;
-    --color-bg-box: white;
+    --color-bg-box: rgb(211, 211, 211);
     --color-white: white;
     --color-gray: gray;
 
@@ -130,6 +130,25 @@ p{
     padding: 10px;
     margin-right: 10px;
     text-align: center;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;   
+}
+
+/*DISPLAY NONE*/
+.none-exemplo{
+    display: flex;
+    gap: var(--gap);
+    background-color: var(--color-bg-box);
+    padding: 20px;
+}
+
+.none-exemplo div{
+    flex: 1;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 25px;
+    text-align: center;
+}
+
+.none-exemplo .elemento-oculto{
+    display: none;
 }
