@@ -314,8 +314,20 @@ p{
     text-align: center;
 }
 
+/*RESPONSIVIDADE*/
+@media (max-width: 700px) {
+    .exemplo-inline-block div{
+        width: 100%;
+        margin-bottom: 12px;
+    }
 
-
+    .grid-duas-colunas{
+        grid-template-columns: 100%;
+    }
+    .grid-quatro-colunas{
+        grid-template-columns: (2,1fr);
+    }
+}
 
 
 
