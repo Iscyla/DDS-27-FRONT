@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula de Bootstrap</title>
+
+    <!-- Importação do CSS do bootsrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Importação do CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <!-- Bara de navegação -->
+      <nav
+        class="navbar bg-dark border-bottom border-body navbar-expand-lg"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJuvbvsxu6MfS6PjZYgiKGB2Yd9LZYLpL7zlNWBj8AMvAT6cQMWrea07S8&s=10"
+              alt="Bootstrap"
+              width="60"
+              height="48"
+            />
+            Lacre
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Corpo -->
+    <main class="container-fluid">
+      <h1 class="text-center m-3 p-2">Início do Lacre</h1>
+
+      <!-- Criando div com classes do bootstrap -->
+      <!-- row - diz que a div é linha -->
+      <!-- g - gap entre os elementos -->
+      <div class="row g-3">
+        <!-- col - diz que a div é coluna -->
+        <!-- bg - controla o fundo da div -->
+        <!-- p - padding -->
+        <!-- text - cor do texto -->
+        <!-- md - breakpoint de tamanho médio >=700px -->
+        <!-- xl - breakpoint de tamanho grande >=1200px -->
+        <div class="col col-12 col-md-6 col-xl-3 bg-success p-5 text-white">
+          Coluna A
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-danger px-5 text-dark">
+          Coluna 2
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-info py-4 text-danger">
+          Coluna ômega
+        </div>
+        <div class="col col-12 col-md-6 col-xl-3 bg-warning pb-3 text-success">
+          Coluna Fim
+        </div>
+      </div>
+
+      <!-- Display Grid com bootstrap -->
+      <h2 class="my-3">Display Grid</h2>
+      <div class="row gap-2">
+        <div class="p-2 text-white rounded-3 f2-1 bg-danger col-4">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-warning col-4">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-success col-2">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-danger col-2">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-warning col-2">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-success col-2">Opção</div>
+      </div>
+
+      <!-- Display Flex com bootstrap -->
+      <h2 class="my-3">Display Grid</h2>
+      <div
+        class="d-flex gap-3 p-3 justify-content-around aling-items-center flex-wrap"
+      >
+        <div class="p-2 text-white rounded-3 f2-1 bg-danger">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-warning">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-success">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-danger">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-warning">Opção</div>
+        <div class="p-2 text-white rounded-3 f2-1 bg-success">Opção</div>
+      </div>
+
+      <!-- Card Groups -->
+      <div class="card-group">
+        <div class="card">
+          <img
+            src="https://static.welban.com.br/public/welban/imagens/produtos/painel-eva-minions-kevin-ref-7930-piffer-662bcdb9ccc72.jpg"
+            class="card-img-top"
+            alt="..."
+            width="50px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kevin</h5>
+            <p class="card-text">
+              Kevin é o Minion alto, magro e responsável que atua como líder e
+              protetor da tribo na franquia Meu Malvado Favorito.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://static.wikia.nocookie.net/minions/images/0/04/Bob.jpg/revision/latest?cb=20150820153153&path-prefix=fr"
+            class="card-img-top"
+            alt="..."
+            width="50px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Bob</h5>
+            <p class="card-text">
+              Bob é o Minion mais novo, baixinho e fofo do trio principal da
+              franquia Meu Malvado Favorito.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://static.wikia.nocookie.net/despicableme/images/8/8e/Stuart_from_Despicable_Me_2.jpg/revision/latest/scale-to-width/360?cb=20230622192848"
+            class="card-img-top"
+            alt="..."
+            width="50px"
+            height="300px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Stuart</h5>
+            <p class="card-text">
+              Stuart é um dos Minions mais famosos da franquia Meu Malvado
+              Favorito, reconhecido por ter um olho só.
+            </p>
+            <p class="card-text">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal top -->
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Papoi
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Parabéns!</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">Você ganhou um Bob!</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer></footer>
+
+    <!-- Importação do Javascript do bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
